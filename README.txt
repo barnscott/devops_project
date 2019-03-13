@@ -7,3 +7,4 @@ podman run --rm pysample
 #pass arguments via env variables
 podman run --rm -e "parg1=time" pysample
 
+Done.

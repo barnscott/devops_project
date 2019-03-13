@@ -22,7 +22,7 @@ def main(arg1=first_arg):
     if arg1 == 'time':
         print("The time is:%s. Wow, great machine learning." % (rtime))
     elif arg1 == 'not-here':
-        print("You need to prove exactly one argument.")
+        print("You need to provide exactly one argument.")
     else:
         print("Additional machine learning coming soon.")
 
