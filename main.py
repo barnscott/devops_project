@@ -1,11 +1,19 @@
 import time
-import sys
+#import sys
+import os
 
-if len(sys.argv) == 2:
-    first_arg = sys.argv[1]
-    print("Length:%s" % (len(sys.argv)))
-else:
-    first_arg = 'not-here'
+#run at terminal in manuall debugging: export parg1='time'
+#and remove env: unset parg1
+
+#get my PyARG#1 from env
+first_arg = os.environ.get('parg1')
+
+#use this code IF passing as argument
+# if len(sys.argv) == 2:
+#     first_arg = sys.argv[1]
+#     print("Length:%s" % (len(sys.argv)))
+# else:
+#     first_arg = 'not-here'
 
 def main(arg1=first_arg):
 
